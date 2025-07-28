@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/from.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+            <p>Bossware I.T</p>
+        </div>
+        <button class="btn" onclick="window.location.href=' index.html'">Return</button>
+    </header>
+    <section class="switch">
+        <div class="selections">
+            <button class="btn1 tab active" data-tab="individual-tab">
+                <img src="images/user (1).png" alt="" loading="lazy">
+                <p>Individual Request</p>
+            </button>
+            <button class="btn2 tab " data-tab="bulk-tab">
+                <img src="images/crowd-of-users.png" alt="" loading="lazy">
+                <p>Bulk Request</p>
+            </button>
+            <button class="btn3 tab " data-tab="org-tab">
+                <img src="images/building.png" alt="" loading="lazy">
+                <p>Organization Request</p>
+            </button>
+
+        </div>
+    </section>
+    <section class="main-form">
+    <section class="forms tab-content active" id="individual-tab">
+        <div class="forms-flex">
+            <div class="label">
+                <img src="images/user (1).png" alt="" loading="lazy" >
+                <p>Individual Service Request</p>
+            </div>
+            <div class="form-individual">
+                <div class="oneside">
+                    <div class="div">
+                        <label for="">Full Name</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Phone Number</label>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="+233 859 456 980">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Email Address</label>
+                        <div class="input">
+                            <input type="email" name="email" placeholder="username@email.com">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Device Type</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select your device</option>
+
+                                <option value="">Laptop</option>
+                                <option value="">Desktop</option>
+                                <option value="">Tablet</option>
+                                <option value="">Smartphone</option>
+                                <option value="">Printer</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="oneside">
+                    <div class="div">
+                        <label for="">Device Brand</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select device brand</option>
+
+                                <option value="">Apple</option>
+                                <option value="">Dell</option>
+                                <option value="">HP</option>
+                                <option value="">Lenovo</option>
+                                <option value="">Sumsung</option>
+                                <option value="">Microsoft</option>
+
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input1">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input">
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+<div class="balance-checker">
+                    <div class="headcheck">
+                        <img src="images/calculator.png" alt="">
+                        <h4>Estimated Total</h4>
+                    </div>
+                    <div class="checks">
+                        <h2>Service fee:
+
+</h2>
+                        <p>$2.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Parts (if needed):
+
+</h2>
+                        <p>$34.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Tax:
+
+</h2>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="checks">
+                        <h3>Total:</h3>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button class="submitrequest">
+                    <p>Submit Request</p>
+                    <img src="images/paper-plane.png" alt="">
+                </button>
+                </div>
+    </section>
+    
+    <section class="forms1 tab-content" id="bulk-tab">
+        <div class="forms-flex">
+            <div class="label">
+                <img src="images/crowd-of-users.png" alt="">
+                <p>Bulk Service Request</p>
+            </div>
+            <div class="form-individual">
+                <div class="oneside">
+                    <div class="div">
+                        <label for="">Requesting Group/Team Name</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                      <div class="div">
+                        <label for="">Contact Person Name</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Contact Number</label>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="+233 859 456 980">
+                        </div>
+                    </div>
+                     <div class="div">
+                        <label for="">Number of Devices </label>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Email Address</label>
+                        <div class="input">
+                            <input type="email" name="email" placeholder="username@email.com">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="oneside">
+                    
+                    <div class="div">
+                        <label for="">Device Type</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select your device</option>
+
+                                <option value="">Laptop</option>
+                                <option value="">Desktop</option>
+                                <option value="">Tablet</option>
+                                <option value="">Smartphone</option>
+                                <option value="">Printer</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <div class="div">
+                        <label for="">Device Brand</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select device brand</option>
+
+                                <option value="">Apple</option>
+                                <option value="">Dell</option>
+                                <option value="">HP</option>
+                                <option value="">Lenovo</option>
+                                <option value="">Sumsung</option>
+                                <option value="">Microsoft</option>
+
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input1">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input">
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+<div class="balance-checker">
+                    <div class="headcheck">
+                        <img src="images/calculator.png" alt="">
+                        <h4>Estimated Total</h4>
+                    </div>
+                    <div class="checks">
+                        <h2>Service fee:
+
+</h2>
+                        <p>$2.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Parts (if needed):
+
+</h2>
+                        <p>$34.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Tax:
+
+</h2>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="checks">
+                        <h3>Total:</h3>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button class="submitrequest">
+                    <p>Submit Request</p>
+                    <img src="images/paper-plane.png" alt="">
+                </button>
+                </div>
+    </section>
+    
+    <section class="forms2 tab-content" id="org-tab">
+        <div class="forms-flex">
+            <div class="label">
+                <img src="images/building.png" alt="">
+                <p>Organizational Service Request</p>
+            </div>
+            <div class="form-individual">
+                <div class="oneside">
+                    <div class="div">
+                        <label for="">Organization Name</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="Enter your Organization name...">
+                        </div>
+                    </div>
+                     <div class="div">
+                        <label for="">Contact Person</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="Enter your name...">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Phone Number</label>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="+233 859 456 980">
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Contact Email</label>
+                        <div class="input">
+                            <input type="email" name="email" placeholder="username@email.com">
+                        </div>
+                    </div>
+                     <div class="div">
+                        <label for="">Department</label>
+                        <div class="input">
+                            <input type="text" name="full-name" placeholder="">
+                        </div>
+                    </div>
+                     <div class="div">
+                        <label for="">Number of Devices </label>
+                        <div class="input">
+                            <input type="number" name="number" placeholder="">
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="oneside">
+                     <div class="div">
+                        <label for="">Device Type</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select your device</option>
+
+                                <option value="">Laptop</option>
+                                <option value="">Desktop</option>
+                                <option value="">Tablet</option>
+                                <option value="">Smartphone</option>
+                                <option value="">Printer</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="div">
+                        <label for="">Device Brand</label>
+                        <div class="input">
+                            <select name="" id="">
+                                <option value="">Select device brand</option>
+
+                                <option value="">Apple</option>
+                                <option value="">Dell</option>
+                                <option value="">HP</option>
+                                <option value="">Lenovo</option>
+                                <option value="">Sumsung</option>
+                                <option value="">Microsoft</option>
+
+
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input1">
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                    <div class="div">
+                        <label for="">Nature of Issue</label>
+                        <div class="input">
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+<div class="balance-checker">
+                    <div class="headcheck">
+                        <img src="images/calculator.png" alt="">
+                        <h4>Estimated Total</h4>
+                    </div>
+                    <div class="checks">
+                        <h2>Service fee:
+
+</h2>
+                        <p>$2.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Parts (if needed):
+
+</h2>
+                        <p>$34.00</p>
+                    </div>
+                    <div class="checks">
+                        <h2>Tax:
+
+</h2>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="checks">
+                        <h3>Total:</h3>
+                        <p>$0.00</p>
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button class="submitrequest">
+                    <p>Submit Request</p>
+                    <img src="images/paper-plane.png" alt="">
+                </button>
+                </div>
+    </section>
+    </section>
+    <script src="js/form-handles.js"></script>
+</body>
+
+</html>

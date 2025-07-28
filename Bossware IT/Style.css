@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(231, 231, 245);
+}
+.mainbar{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: fixed;
+    z-index: 2;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+
+}
+.logo img{
+    height: 40px;
+    object-fit: cover;
+}
+.logo p{
+    font-size: 1.9em;
+    font-weight: 700;
+    color: rgb(27, 27, 139);
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.mainbar nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.mainbar nav ul li{
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn{
+    height: 43px;
+    width: 140px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(58, 58, 228);
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+.togeth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.ham{
+    display: none;
+}
+.ham img{
+    height: 30px;
+}
+.sidebar{
+    position: fixed;
+    z-index: 30;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+.sides{
+    /* padding: 40px; */
+position: relative;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content:  center;
+align-items: center;
+}
+.overlay{
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.527);
+    height: 100%;
+    width: 100%;
+    z-index: 31;
+    position: absolute;
+}
+.sides nav{
+    position: absolute;
+    z-index: 31;
+height: 80%;
+width: 90%;
+background: white;
+border-radius: 20px;
+padding: 30px   ;
+}
+.sides nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.sides nav ul li a{
+      font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  color: black;
+}
+.logs{
+    text-align: right;
+}
+.logs img{
+    height: 18px;
+}
+
+.hero{
+    height: auto;
+    padding: 28vh 0 15vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: linear-gradient( white,white,  rgb(231, 231, 245));
+}
+.btn23{
+    height: 43px;
+    width: 140px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(58, 58, 228);
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+}
+.flex{
+    height: auto;
+    /* padding: 3vh 0 0 0; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    width: 85%;
+}
+.flextext{
+    width: 40%;
+}
+.flextext h2{
+    font-size: 2.4em;
+    font-weight: 700;
+    color: rgb(11, 11, 173);
+    margin-bottom: 10px;
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.flextext p{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+    margin-bottom: 20px;
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.fleximage img{
+    height: 350px;
+    object-fit: cover;
+}
+.steps{
+    height: auto;
+    padding: 10vh 0 10vh 0;
+}
+.stepos{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.stepstext p{
+    font-size: 2em;
+    font-weight: 800;
+      font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+    color: rgb(11, 11, 173);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 85%;
+
+}
+.stepslittle{
+    height: 350px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    border-radius: 15px;
+}
+.stepsimage{
+    /* position: absolute; */
+    height: 150px;
+    top: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+    object-fit: cover;
+
+}
+.big1{
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in;
+}
+.big1:hover{
+    transform: scale(1.1);
+}
+.big2{
+    height: 180px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+
+}
+.big2:hover{
+    transform: scale(1.1);
+}
+.big3{
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in;
+
+
+}
+.big3:hover{
+    transform: scale(1.1);
+}
+.stepslittle h3{
+    margin-top: 10px;
+    font-size: 1.9em;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+    color: rgb(11, 11, 173);
+
+}
+.stepslittle p{
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width:710px) {
+    .ham{
+        display: flex;
+    }
+    .mainbar nav{
+        display: none;
+    }
+    .flextext{
+    width: 80%;
+}
+.grid{
+    grid-template-columns: repeat(2,1fr);
+    width: 90%;
+}
+}
+@media screen and (max-width:480px) {
+    .hero{
+        padding: 17vh 0 10vh 0;
+    }
+    .logo{
+        gap: 3px
+        ;
+    }
+   .logo img{
+    height: 32px;
+   } 
+   .logo p{
+       font-size: 1.2em;
+
+   }
+   .togeth{
+    gap: 3px;
+   }
+   .fleximage img{
+    height: 250px;
+   }
+    .btn{
+    height: 40px;
+        width: 110px;
+
+    font-size: 0.9em;
+
+}
+   .btn23{
+    height: 45px;
+        width: 100%;
+
+    font-size: 1em;
+
+}
+.flextext {
+    width: 100%; 
+    text-align: center;
+
+}
+.flextext h2{
+    font-size: 1.9em;
+    text-align: left;
+}
+.flextext p{
+    font-size: 1.1em;
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+.grid{
+    grid-template-columns: repeat(1,1fr);
+}
+.stepstext p{
+    font-size: 1.4em;
+}
+
+}

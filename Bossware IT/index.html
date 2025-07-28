@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bossware IT</title>
+</head>
+
+<body>
+    <header class="mainbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="" loading="lazy">
+            <p>Bossware I.T</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="togeth">
+        <button class="btn" onclick="window.location.href='#stepss'">Get A Quote</button>
+        <div class="ham">
+            <img src="images/more.png" alt="" onclick="Open()">
+            
+        </div>
+        </div>
+    </header>
+    <header class="sidebar">
+        <div class="sides">
+        <div class="overlay"></div>
+        <nav>
+        <div class="logs">
+            <img src="images/close.png" alt="" class="Close" onclick="Close()">
+        </div>
+
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li><a href="forms.html">Forms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="flex">
+            <div class="flextext">
+                <h2>Request Tech Support in Minutes</h2>
+                <p>Fix your devices with ease. Whether you’re solo or a business, we’ve got you covered.</p>
+                <button class="btn23" onclick="window.location.href='forms.html ' ">Get started</button>
+            </div>
+            <div class="fleximage">
+                <img src="images/undraw_developer-activity_4zqd-removebg-preview.png" alt="" class="bounce" loading="lazy">
+            </div>
+        </div>
+    </section>
+    <section class="steps">
+        <div class="stepos">
+            <div class="stepstext" id="stepss">
+                <p>HOW IT WORKS</p>
+            </div>
+            <div class="grid">
+                <div class="stepslittle">
+                    <div class="stepsimage">
+                    <img src="images/Humaaans - 1 Character.png" alt="" class="big1" loading="lazy"></div>
+                    <h3>Step 1</h3>
+                    <p>Choose request type (Individual, Bulk, Organization)</p>
+                </div>
+                <div class="stepslittle">
+               
+                    <img src="images/6516d1c894362417af02e1a6_jbtWeMsaR26hhuF248aJ-removebg-preview.png" alt=""
+                        class="big2" loading="lazy">
+                    
+                    <h3>Step 2</h3>
+                    <p>Fill in your device info</p>
+                </div>
+                <div class="stepslittle">
+                    <div class="stepsimage">
+                    <img src="images/cash.png" alt="" class="big3" loading="lazy"></div>
+                    <h3>Step 3</h3>
+                    <p>See estimated cost instantly</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+        function Close(){
+        const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+        }
+           function Open(){
+        const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

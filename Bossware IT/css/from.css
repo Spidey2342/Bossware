@@ -132,8 +132,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 6px;
-    background: #ef8ef8
-;
+    background: #ef8ef8;
 }
 .btn3 img{
     height: 19px;
@@ -275,6 +274,25 @@ textarea{
     border: 1px solid rgba(63, 63, 63, 0.274);
 
 }
+.balance-checker1{
+    height: auto;
+    padding: 30px;
+        background:#b8ffb9;
+
+    border-radius: 10px;
+    border: 1px solid rgba(63, 63, 63, 0.274);
+
+}
+.balance-checker2{
+    height: auto;
+    padding: 30px;
+          background: #f8b1ff;
+
+
+    border-radius: 10px;
+    border: 1px solid rgba(63, 63, 63, 0.274);
+
+}
 .headcheck{
     display: flex;
     gap: 10px;
@@ -286,6 +304,40 @@ textarea{
 }
 .headcheck h4{
     color:rgb(0, 0, 148) ;
+    font-size: 1.1em;
+    font-weight: 700;
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.headcheck1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.headcheck1 img{
+    height: 30px;
+}
+.headcheck1 h4{
+    color:#008002 ;
+    font-size: 1.1em;
+    font-weight: 700;
+     font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+}
+.headcheck2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.headcheck2 img{
+    height: 30px;
+}
+.headcheck2 h4{
+     color:#80028b
+;
+
     font-size: 1.1em;
     font-weight: 700;
      font-family: "Nunito", sans-serif;

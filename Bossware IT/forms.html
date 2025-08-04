@@ -34,43 +34,45 @@
         </div>
     </section>
     <section class="main-form">
-    <section class="forms tab-content active" id="individual-tab">
+        <form action="">    <section class="forms tab-content active" id="individual-tab">
         <div class="forms-flex">
             <div class="label">
                 <img src="images/user (1).png" alt="" loading="lazy" >
                 <p>Individual Service Request</p>
             </div>
             <div class="form-individual">
+
                 <div class="oneside">
+                    
                     <div class="div">
                         <label for="">Full Name</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name...">
+                            <input type="text" name="full-name" placeholder="Enter your name..." required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Phone Number</label>
                         <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980">
+                            <input type="number" name="number" placeholder="+233 859 456 980"  required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Email Address</label>
                         <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com">
+                            <input type="email" name="email" placeholder="username@email.com" required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Device Type</label>
                         <div class="input">
-                            <select name="" id="">
+                            <select name="" id="device-type" required>
                                 <option value="">Select your device</option>
 
-                                <option value="">Laptop</option>
-                                <option value="">Desktop</option>
-                                <option value="">Tablet</option>
-                                <option value="">Smartphone</option>
-                                <option value="">Printer</option>
+                                <option value="Laptop">Laptop</option>
+                                <option value="Desktop">Desktop</option>
+                                <option value="Tablet">Tablet</option>
+                                <option value="Smartphone">Smartphone</option>
+                                <option value="Printer">Printer</option>
 
                             </select>
 
@@ -84,15 +86,15 @@
                     <div class="div">
                         <label for="">Device Brand</label>
                         <div class="input">
-                            <select name="" id="">
+                            <select name="" id="device-brand" required>
                                 <option value="">Select device brand</option>
 
-                                <option value="">Apple</option>
-                                <option value="">Dell</option>
-                                <option value="">HP</option>
-                                <option value="">Lenovo</option>
-                                <option value="">Sumsung</option>
-                                <option value="">Microsoft</option>
+                                <option value="Apple">Apple</option>
+                                <option value="Dell">Dell</option>
+                                <option value="HP">HP</option>
+                                <option value="Lenovo">Lenovo</option>
+                                <option value="Sumsung">Sumsung</option>
+                                <option value="Microsoft">Microsoft</option>
 
 
                             </select>
@@ -106,9 +108,9 @@
                         </div>
                     </div>
                     <div class="div">
-                        <label for="">Nature of Issue</label>
+                        <label for="">Preferred Contact Date</label>
                         <div class="input">
-                            <input type="date">
+                            <input type="date" required>
                         </div>
                     </div>
                 </div>
@@ -120,27 +122,39 @@
                         <img src="images/calculator.png" alt="">
                         <h4>Estimated Total</h4>
                     </div>
+                     <div class="checks">
+                        <h2>Device fee:
+
+</h2>
+                        <p class="Device-fee">$2.00</p>
+                    </div> <div class="checks">
+                        <h2>Brand fee:
+
+</h2>
+                        <p class="Brand-fee">$2.00</p>
+                    </div>
+
                     <div class="checks">
                         <h2>Service fee:
 
 </h2>
-                        <p>$2.00</p>
+                        <p class="Service-fee">$2.00</p>
                     </div>
                     <div class="checks">
                         <h2>Parts (if needed):
 
 </h2>
-                        <p>$34.00</p>
+                        <p class="Parts-fee">$34.00</p>
                     </div>
                     <div class="checks">
                         <h2>Tax:
 
 </h2>
-                        <p>$10.00</p>
+                        <p class="Tax-fee">$10.00</p>
                     </div>
                     <div class="checks">
                         <h3>Total:</h3>
-                        <p>$0.00</p>
+                        <p class="Total-fee">$0.00</p>
                     </div>
                 </div>
 
@@ -151,7 +165,8 @@
                 </button>
                 </div>
     </section>
-    
+    </form>
+
     <section class="forms1 tab-content" id="bulk-tab">
         <div class="forms-flex">
             <div class="label">
@@ -163,31 +178,31 @@
                     <div class="div">
                         <label for="">Requesting Group/Team Name</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name...">
+                            <input type="text" name="full-name" placeholder="Enter your name..." required>
                         </div>
                     </div>
                       <div class="div">
                         <label for="">Contact Person Name</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name...">
+                            <input type="text" name="full-name" placeholder="Enter your name..." required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Contact Number</label>
                         <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980">
+                            <input type="number" name="number" placeholder="+233 859 456 980" required>
                         </div>
                     </div>
                      <div class="div">
                         <label for="">Number of Devices </label>
                         <div class="input">
-                            <input type="number" name="number" placeholder="">
+                            <input type="number" name="number" placeholder="" required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Email Address</label>
                         <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com">
+                            <input type="email" name="email" placeholder="username@email.com" required>
                         </div>
                     </div>
 
@@ -196,15 +211,15 @@
                     
                     <div class="div">
                         <label for="">Device Type</label>
-                        <div class="input">
-                            <select name="" id="">
+                         <div class="input">
+                            <select name="" id="device-types" required>
                                 <option value="">Select your device</option>
 
-                                <option value="">Laptop</option>
-                                <option value="">Desktop</option>
-                                <option value="">Tablet</option>
-                                <option value="">Smartphone</option>
-                                <option value="">Printer</option>
+                                <option value="Laptops">Laptop</option>
+                                <option value="Desktops">Desktop</option>
+                                <option value="Tablets">Tablet</option>
+                                <option value="Smartphones">Smartphone</option>
+                                <option value="Printers">Printer</option>
 
                             </select>
 
@@ -214,16 +229,16 @@
 
                     <div class="div">
                         <label for="">Device Brand</label>
-                        <div class="input">
-                            <select name="" id="">
+                       <div class="input">
+                            <select name="" id="device-brands" required>
                                 <option value="">Select device brand</option>
 
-                                <option value="">Apple</option>
-                                <option value="">Dell</option>
-                                <option value="">HP</option>
-                                <option value="">Lenovo</option>
-                                <option value="">Sumsung</option>
-                                <option value="">Microsoft</option>
+                                <option value="Apples">Apple</option>
+                                <option value="Dells">Dell</option>
+                                <option value="HPs">HP</option>
+                                <option value="Lenovos">Lenovo</option>
+                                <option value="Sumsungs">Sumsung</option>
+                                <option value="Microsofts">Microsoft</option>
 
 
                             </select>
@@ -237,44 +252,55 @@
                         </div>
                     </div>
                     <div class="div">
-                        <label for="">Nature of Issue</label>
+                        <label for="">Preferred Contact Date</label>
                         <div class="input">
-                            <input type="date">
+                            <input type="date" required>
                         </div>
                     </div>
                 </div>
 
                 
             </div>
-<div class="balance-checker">
-                    <div class="headcheck">
-                        <img src="images/calculator.png" alt="">
+<div class="balance-checker1">
+                    <div class="headcheck1">
+                        <img src="images/calculator (1).png" alt="">
                         <h4>Estimated Total</h4>
                     </div>
+                     <div class="checks">
+                        <h2>Device fee:
+
+</h2>
+                        <p class="Device-fees">$2.00</p>
+                    </div> <div class="checks">
+                        <h2>Brand fee:
+
+</h2>
+                        <p class="Brand-fees">$2.00</p>
+                    </div>
+
                     <div class="checks">
                         <h2>Service fee:
 
 </h2>
-                        <p>$2.00</p>
+                        <p class="Service-fees">$2.00</p>
                     </div>
                     <div class="checks">
                         <h2>Parts (if needed):
 
 </h2>
-                        <p>$34.00</p>
+                        <p class="Parts-fees">$34.00</p>
                     </div>
                     <div class="checks">
                         <h2>Tax:
 
 </h2>
-                        <p>$10.00</p>
+                        <p class="Tax-fees">$10.00</p>
                     </div>
                     <div class="checks">
                         <h3>Total:</h3>
-                        <p>$0.00</p>
+                        <p class="Total-fees">$0.00</p>
                     </div>
                 </div>
-
                 <div class="submit">
                     <button class="submitrequest">
                     <p>Submit Request</p>
@@ -294,37 +320,37 @@
                     <div class="div">
                         <label for="">Organization Name</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your Organization name...">
+                            <input type="text" name="full-name" placeholder="Enter your Organization name..." required>
                         </div>
                     </div>
                      <div class="div">
                         <label for="">Contact Person</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name...">
+                            <input type="text" name="full-name" placeholder="Enter your name..." required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Phone Number</label>
                         <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980">
+                            <input type="number" name="number" placeholder="+233 859 456 980" required>
                         </div>
                     </div>
                     <div class="div">
                         <label for="">Contact Email</label>
                         <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com">
+                            <input type="email" name="email" placeholder="username@email.com" required>
                         </div>
                     </div>
                      <div class="div">
                         <label for="">Department</label>
                         <div class="input">
-                            <input type="text" name="full-name" placeholder="">
+                            <input type="text" name="full-name" placeholder="" required>
                         </div>
                     </div>
                      <div class="div">
                         <label for="">Number of Devices </label>
                         <div class="input">
-                            <input type="number" name="number" placeholder="">
+                            <input type="number" name="number" placeholder="" required>
                         </div>
                     </div>
                    
@@ -332,15 +358,15 @@
                 <div class="oneside">
                      <div class="div">
                         <label for="">Device Type</label>
-                        <div class="input">
-                            <select name="" id="">
+                          <div class="input">
+                            <select name="" id="device-types1" required>
                                 <option value="">Select your device</option>
 
-                                <option value="">Laptop</option>
-                                <option value="">Desktop</option>
-                                <option value="">Tablet</option>
-                                <option value="">Smartphone</option>
-                                <option value="">Printer</option>
+                                <option value="Laptops1">Laptop</option>
+                                <option value="Desktops1">Desktop</option>
+                                <option value="Tablets1">Tablet</option>
+                                <option value="Smartphones1">Smartphone</option>
+                                <option value="Printers1">Printer</option>
 
                             </select>
 
@@ -351,16 +377,16 @@
 
                     <div class="div">
                         <label for="">Device Brand</label>
-                        <div class="input">
-                            <select name="" id="">
+                      <div class="input">
+                            <select name="" id="device-brands1" required>
                                 <option value="">Select device brand</option>
 
-                                <option value="">Apple</option>
-                                <option value="">Dell</option>
-                                <option value="">HP</option>
-                                <option value="">Lenovo</option>
-                                <option value="">Sumsung</option>
-                                <option value="">Microsoft</option>
+                                <option value="Apples1">Apple</option>
+                                <option value="Dells1">Dell</option>
+                                <option value="HPs1">HP</option>
+                                <option value="Lenovos1">Lenovo</option>
+                                <option value="Sumsungs1">Sumsung</option>
+                                <option value="Microsofts1">Microsoft</option>
 
 
                             </select>
@@ -374,44 +400,55 @@
                         </div>
                     </div>
                     <div class="div">
-                        <label for="">Nature of Issue</label>
+                        <label for="">Preferred Contact Date</label>
                         <div class="input">
-                            <input type="date">
+                            <input type="date" required>
                         </div>
                     </div>
                 </div>
 
                 
             </div>
-<div class="balance-checker">
-                    <div class="headcheck">
-                        <img src="images/calculator.png" alt="">
+<div class="balance-checker2">
+                    <div class="headcheck2 ">
+                        <img src="images/calculator (2).png" alt="">
                         <h4>Estimated Total</h4>
                     </div>
+                     <div class="checks">
+                        <h2>Device fee:
+
+</h2>
+                        <p class="Device-fees1">$2.00</p>
+                    </div> <div class="checks">
+                        <h2>Brand fee:
+
+</h2>
+                        <p class="Brand-fees1">$2.00</p>
+                    </div>
+
                     <div class="checks">
                         <h2>Service fee:
 
 </h2>
-                        <p>$2.00</p>
+                        <p class="Service-fees1">$2.00</p>
                     </div>
                     <div class="checks">
                         <h2>Parts (if needed):
 
 </h2>
-                        <p>$34.00</p>
+                        <p class="Parts-fees1">$34.00</p>
                     </div>
                     <div class="checks">
                         <h2>Tax:
 
 </h2>
-                        <p>$10.00</p>
+                        <p class="Tax-fees1">$10.00</p>
                     </div>
                     <div class="checks">
                         <h3>Total:</h3>
-                        <p>$0.00</p>
+                        <p class="Total-fees1">$0.00</p>
                     </div>
                 </div>
-
                 <div class="submit">
                     <button class="submitrequest">
                     <p>Submit Request</p>

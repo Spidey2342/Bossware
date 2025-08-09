@@ -53,14 +53,14 @@ const brandPrices = {
 
     const deviceFee = devicePrices[selectedDevice] || 0;
     const brandFee = brandPrices[selectedBrand] || 0;
-    const serviceFee = parseFloat(serviceFeeField.textContent.replace("$", "")) || 0;
-    const taxFee = parseFloat(taxFeeField.textContent.replace("$", "")) || 0;
+    const serviceFee = parseFloat(serviceFeeField.textContent.replace("GHs", "")) || 0;
+    const taxFee = parseFloat(taxFeeField.textContent.replace("GHs", "")) || 0;
 
     const total = deviceFee + brandFee + serviceFee + taxFee;
 
-    deviceFeeField.textContent = `$${deviceFee.toFixed(2)}`;
-    brandFeeField.textContent = `$${brandFee.toFixed(2)}`;
-    totalField.textContent = `$${total.toFixed(2)}`;
+    deviceFeeField.textContent = `GHs${deviceFee.toFixed(2)}`;
+    brandFeeField.textContent = `GHs${brandFee.toFixed(2)}`;
+    totalField.textContent = `GHs${total.toFixed(2)}`;
   }
 
   deviceSelect.addEventListener("change", calculateTotal);
@@ -105,14 +105,14 @@ const brandPrices1 = {
 
     const deviceFee1 = devicePrices1[selectedDevice1] || 0;
     const brandFee1 = brandPrices1[selectedBrand1] || 0;
-    const serviceFee1 = parseFloat(serviceFeeField1.textContent.replace("$", "")) || 0;
-    const taxFee1 = parseFloat(taxFeeField1.textContent.replace("$", "")) || 0;
+    const serviceFee1 = parseFloat(serviceFeeField1.textContent.replace("GHs", "")) || 0;
+    const taxFee1 = parseFloat(taxFeeField1.textContent.replace("GHs", "")) || 0;
 
     const total1 = deviceFee1 + brandFee1 + serviceFee1 + taxFee1;
 
-    deviceFeeField1.textContent = `$${deviceFee1.toFixed(2)}`;
-    brandFeeField1.textContent = `$${brandFee1.toFixed(2)}`;
-    totalField1.textContent = `$${total1.toFixed(2)}`;
+    deviceFeeField1.textContent = `GHs${deviceFee1.toFixed(2)}`;
+    brandFeeField1.textContent = `GHs${brandFee1.toFixed(2)}`;
+    totalField1.textContent = `GHs${total1.toFixed(2)}`;
   }
 
   deviceSelect1.addEventListener("change", calculateTotal1);
@@ -157,14 +157,14 @@ const brandPrices11 = {
 
     const deviceFee11 = devicePrices11[selectedDevice11] || 0;
     const brandFee11 = brandPrices11[selectedBrand11] || 0;
-    const serviceFee11 = parseFloat(serviceFeeField11.textContent.replace("$", "")) || 0;
-    const taxFee11 = parseFloat(taxFeeField11.textContent.replace("$", "")) || 0;
+    const serviceFee11 = parseFloat(serviceFeeField11.textContent.replace("GHs", "")) || 0;
+    const taxFee11 = parseFloat(taxFeeField11.textContent.replace("GHs", "")) || 0;
 
     const total11 = deviceFee11 + brandFee11 + serviceFee11 + taxFee11;
 
-    deviceFeeField11.textContent = `$${deviceFee11.toFixed(2)}`;
-    brandFeeField11.textContent = `$${brandFee11.toFixed(2)}`;
-    totalField11.textContent = `$${total11.toFixed(2)}`;
+    deviceFeeField11.textContent = `GHs${deviceFee11.toFixed(2)}`;
+    brandFeeField11.textContent = `GHs${brandFee11.toFixed(2)}`;
+    totalField11.textContent = `GHs${total11.toFixed(2)}`;
   }
 
   deviceSelect11.addEventListener("change", calculateTotal11);

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/from.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bossware Tech Forms</title>
 </head>
 
 <body>
@@ -34,266 +34,924 @@
         </div>
     </section>
     <section class="main-form">
-        <form action="">    <section class="forms tab-content active" id="individual-tab">
-        <div class="forms-flex">
-            <div class="label">
-                <img src="images/user (1).png" alt="" loading="lazy" >
-                <p>Individual Service Request</p>
-            </div>
-            <div class="form-individual">
+        <form action="">
+            <section class="forms tab-content active" id="individual-tab">
+                <div class="forms-flex">
+                    <div class="label">
+                        <img src="images/user (1).png" alt="" loading="lazy">
+                        <p>Individual Service Request</p>
+                    </div>
+                    <div class="form-individual">
 
-                <div class="oneside">
-                    
-                    <div class="div">
-                        <label for="">Full Name</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name..." required>
+                        <div class="oneside">
+
+                            <div class="div">
+                                <label for="">Full Name</label>
+                                <div class="input">
+                                    <input type="text" name="full-name" placeholder="Enter your name..." required>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <label for="">Phone Number</label>
+                                <div class="input">
+                                    <input type="number" name="number" placeholder="+233 859 456 980" required>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <label for="">Email Address</label>
+                                <div class="input">
+                                    <input type="email" name="email" placeholder="username@email.com" required>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <label for="">Device Type</label>
+                                <div class="input">
+                                    <select name="" id="device-type" required>
+                                        <option value="">Select your device</option>
+
+                                        <option value="Laptop">Laptop</option>
+                                        <option value="Desktop">Desktop</option>
+                                        <option value="Tablet">Tablet</option>
+                                        <option value="Smartphone">Smartphone</option>
+                                        <option value="Printer">Printer</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="oneside">
+                            <div class="div">
+                                <label for="">Device Brand</label>
+                                <div class="input">
+                                    <select name="" id="device-brand" required>
+                                        <optgroup label="Major Global Brands">
+                                            <option value="dell">Dell</option>
+                                            <option value="hp">HP (Hewlett-Packard)</option>
+                                            <option value="lenovo">Lenovo</option>
+                                            <option value="asus">ASUS</option>
+                                            <option value="acer">Acer</option>
+                                            <option value="apple">Apple</option>
+                                            <option value="microsoft">Microsoft</option>
+                                            <option value="samsung">Samsung</option>
+                                            <option value="lg">LG</option>
+                                        </optgroup>
+
+                                        <optgroup label="Gaming & High-Performance Brands">
+                                            <option value="alienware">Alienware</option>
+                                            <option value="msi">MSI (Micro-Star International)</option>
+                                            <option value="razer">Razer</option>
+                                            <option value="originpc">Origin PC</option>
+                                            <option value="cyberpowerpc">CyberPowerPC</option>
+                                            <option value="ibuypower">iBUYPOWER</option>
+                                        </optgroup>
+
+                                        <optgroup label="Business & Enterprise Solutions">
+                                            <option value="fujitsu">Fujitsu</option>
+                                            <option value="toshiba">Toshiba</option>
+                                            <option value="panasonic">Panasonic</option>
+                                            <option value="nec">NEC</option>
+                                            <option value="hitachi">Hitachi</option>
+                                        </optgroup>
+
+                                        <optgroup label="Specialized / Workstation Brands">
+                                            <option value="vaio">VAIO</option>
+                                            <option value="system76">System76</option>
+                                            <option value="zotac">ZOTAC</option>
+                                            <option value="eurocom">Eurocom</option>
+                                            <option value="boxx">BOXX Technologies</option>
+                                        </optgroup>
+
+                                        <optgroup label="Budget & Value Brands">
+                                            <option value="chuwi">Chuwi</option>
+                                            <option value="clevo">Clevo</option>
+                                            <option value="gigabyte">Gigabyte</option>
+                                            <option value="emachines">eMachines</option>
+                                        </optgroup>
+
+                                        <optgroup label="Defunct / Legacy Brands">
+                                            <option value="compaq">Compaq</option>
+                                            <option value="gateway">Gateway</option>
+                                            <option value="ibm">IBM</option>
+                                            <option value="packardbell">Packard Bell</option>
+                                        </optgroup>
+
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="div">
+                                <label for="">Fault description</label>
+                                <div class="input">
+
+                                    <div class="custom-select" id="hardwareDropdown">
+                                        <div class="select-box" id="selectedText">Select Hardware Fault(s)</div>
+                                        <div class="options-container">
+
+                                            <strong>Power & Boot Issues</strong>
+                                            <label><input type="checkbox" value="Device not powering on"> Device not
+                                                powering on</label>
+                                            <label><input type="checkbox" value="Intermittent power loss"> Intermittent
+                                                power loss</label>
+                                            <label><input type="checkbox" value="Loose or faulty power jack (DC jack)">
+                                                Loose or faulty power jack (DC jack)</label>
+                                            <label><input type="checkbox" value="Battery not charging"> Battery not
+                                                charging</label>
+                                            <label><input type="checkbox" value="Battery drains quickly"> Battery drains
+                                                quickly</label>
+                                            <label><input type="checkbox" value="Power button failure"> Power button
+                                                failure</label>
+                                            <label><input type="checkbox" value="Boot loop (continuous restart)"> Boot
+                                                loop (continuous restart)</label>
+                                            <label><input type="checkbox" value="BIOS/UEFI corruption"> BIOS/UEFI
+                                                corruption</label>
+                                            <label><input type="checkbox" value="POST errors / Beep codes"> POST errors
+                                                / Beep codes</label>
+                                            <label><input type="checkbox" value="No display on boot"> No display on
+                                                boot</label>
+
+                                            <strong>Display & Graphics Issues</strong>
+                                            <label><input type="checkbox" value="Cracked/broken screen"> Cracked/broken
+                                                screen</label>
+                                            <label><input type="checkbox" value="Dead pixels or stuck pixels"> Dead
+                                                pixels or stuck pixels</label>
+                                            <label><input type="checkbox" value="Dim or no backlight"> Dim or no
+                                                backlight</label>
+                                            <label><input type="checkbox" value="Flickering display"> Flickering
+                                                display</label>
+                                            <label><input type="checkbox" value="Lines or artifacts on screen"> Lines or
+                                                artifacts on screen</label>
+                                            <label><input type="checkbox" value="Display color distortion"> Display
+                                                color distortion</label>
+                                            <label><input type="checkbox" value="Screen not detecting external display">
+                                                Screen not detecting external display</label>
+                                            <label><input type="checkbox" value="Loose or damaged LVDS/eDP cable"> Loose
+                                                or damaged LVDS/eDP cable</label>
+                                            <label><input type="checkbox" value="Faulty GPU (Graphics Card)"> Faulty GPU
+                                                (Graphics Card)</label>
+                                            <label><input type="checkbox" value="Overheating GPU"> Overheating
+                                                GPU</label>
+
+                                            <strong>Keyboard & Input Devices</strong>
+                                            <label><input type="checkbox" value="Keys not responding"> Keys not
+                                                responding</label>
+                                            <label><input type="checkbox" value="Sticky keys"> Sticky keys</label>
+                                            <label><input type="checkbox" value="Broken or missing keys"> Broken or
+                                                missing keys</label>
+                                            <label><input type="checkbox" value="Keyboard backlight failure"> Keyboard
+                                                backlight failure</label>
+                                            <label><input type="checkbox" value="Touchpad not working">Touchpad not
+                                                working</label>
+                                            <label><input type="checkbox" value="Erratic cursor movement">Erratic cursor
+                                                movement</label>
+                                            <label><input type="checkbox" value="Touchscreen unresponsive"> Touchscreen
+                                                unresponsive</label>
+
+
+                                            <strong>Storage & Data Issues</strong>
+                                            <label><input type="checkbox" value="Hard drive not detected"> Hard drive
+                                                not detected</label>
+                                            <label><input type="checkbox" value="SSD not detected ">SSD not
+                                                detected</label>
+                                            <label><input type="checkbox" value="Slow read/write speeds"> Slow
+                                                read/write speeds</label>
+                                            <label><input type="checkbox"
+                                                    value="Clicking or grinding HDD noise">Clicking or grinding HDD
+                                                noise</label>
+                                            <label><input type="checkbox" value="Bad sectors on HDD">Bad sectors on
+                                                HDD</label>
+                                            <label><input type="checkbox" value="Corrupted file system">Corrupted file
+                                                system</label>
+                                            <label><input type="checkbox" value="Drive overheating">Drive
+                                                overheating</label>
+
+
+                                            <strong>Memory (RAM) Issues</strong>
+                                            <label><input type="checkbox" value="System not detecting RAM">System not
+                                                detecting RAM</label>
+                                            <label><input type="checkbox"
+                                                    value="Frequent system crashes (BSODs)">Frequent system crashes
+                                                (BSODs)</label>
+                                            <label><input type="checkbox" value="Memory errors during POST">Memory
+                                                errors during POST</label>
+                                            <label><input type="checkbox" value="RAM slot failure">RAM slot
+                                                failure</label>
+
+                                            <strong>Cooling & Overheating</strong>
+                                            <label><input type="checkbox" value="Overheating CPU">Overheating
+                                                CPU</label>
+                                            <label><input type="checkbox" value="Fan not spinning">Fan not
+                                                spinning</label>
+                                            <label><input type="checkbox" value="Fan noise / grinding">Fan noise /
+                                                grinding</label>
+                                            <label><input type="checkbox" value="Clogged heatsink or dust buildup">
+                                                Clogged heatsink or dust buildup</label>
+
+
+                                            <strong>Ports & Connectivity</strong>
+                                            <label><input type="checkbox" value="USB ports not working">USB ports not
+                                                working</label>
+                                            <label><input type="checkbox"
+                                                    value="HDMI/DisplayPort not working">HDMI/DisplayPort not
+                                                working</label>
+                                            <label><input type="checkbox" value="Ethernet port failure">Ethernet port
+                                                failure</label>
+                                            <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                                static/no sound</label>
+                                            <label><input type="checkbox" value="Loose or damaged connectors">Loose or
+                                                damaged connectors</label>
+                                            <label><input type="checkbox" value="Card reader not detecting">Card reader
+                                                not detecting</label>
+
+                                            <strong>Audio & Sound Issues</strong>
+                                            <label><input type="checkbox" value="No audio output">No audio
+                                                output</label>
+                                            <label><input type="checkbox" value="Distorted sound">Distorted
+                                                sound</label>
+                                            <label><input type="checkbox" value="One speaker not working">One speaker
+                                                not working</label>
+                                            <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                                static/no sound</label>
+                                            <label><input type="checkbox" value="Microphone not detecting">Microphone
+                                                not detecting</label>
+                                            <label><input type="checkbox" value="Audio driver failure">Audio driver
+                                                failure</label>
+
+
+                                            <strong>Network & Wireless Issues</strong>
+                                            <label><input type="checkbox" value="Wi-Fi not detecting networks">Wi-Fi not
+                                                detecting networks</label>
+                                            <label><input type="checkbox" value="Wi-Fi drops connection">Wi-Fi drops
+                                                connection</label>
+                                            <label><input type="checkbox" value="Bluetooth not working">Bluetooth not
+                                                working</label>
+                                            <label><input type="checkbox" value="Weak signal reception">Weak signal
+                                                reception</label>
+                                            <label><input type="checkbox" value="Network adapter failure">Network
+                                                adapter failure</label>
+
+                                            <strong>Optical Drive Issues</strong>
+                                            <label><input type="checkbox" value="CD/DVD not reading">CD/DVD not
+                                                reading</label>
+                                            <label><input type="checkbox" value="CD/DVD not ejecting">CD/DVD not
+                                                ejecting</label>
+                                            <label><input type="checkbox" value="Noisy optical drive">Noisy optical
+                                                drive</label>
+
+
+                                            <strong>Motherboard & Chipset Issues</strong>
+                                            <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                                damage</label>
+                                            <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                                damage</label>
+                                            <label><input type="checkbox" value="Burnt components">Burnt
+                                                components</label>
+                                            <label><input type="checkbox" value="Faulty CMOS battery">Faulty CMOS
+                                                battery</label>
+                                            <label><input type="checkbox" value="Damaged capacitors">Damaged
+                                                capacitors</label>
+                                            <label><input type="checkbox"
+                                                    value="Southbridge/Northbridge failure">Southbridge/Northbridge
+                                                failure</label>
+
+
+                                            <strong>Casing & Physical Damage</strong>
+                                            <label><input type="checkbox" value="Broken hinges">Broken hinges</label>
+                                            <label><input type="checkbox" value="Cracked casing">Cracked casing</label>
+                                            <label><input type="checkbox" value="Loose screws">Loose screws</label>
+                                            <label><input type="checkbox" value="Damaged bezels">Damaged bezels</label>
+                                            <label><input type="checkbox" value="Liquid damage">Liquid damage</label>
+
+                                            <strong>Peripheral Issues</strong>
+                                            <label><input type="checkbox"
+                                                    value="External keyboard not detected">External keyboard not
+                                                detected</label>
+                                            <label><input type="checkbox" value="External mouse not detected">External
+                                                mouse not detected</label>
+                                            <label><input type="checkbox" value="Printer connection issues">Printer
+                                                connection issues</label>
+                                            <label><input type="checkbox" value="Docking station issues">Docking station
+                                                issues</label>
+
+                                            <strong>BIOS & Firmware Issues</strong>
+                                            <label><input type="checkbox" value="BIOS password lock">BIOS password
+                                                lock</label>
+                                            <label><input type="checkbox" value="Firmware corruption">Firmware
+                                                corruption</label>
+                                            <label><input type="checkbox" value="Boot order misconfiguration">Boot order
+                                                misconfiguration</label>
+                                            <label><input type="checkbox" value="BIOS update failure">BIOS update
+                                                failure</label>
+
+
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="input">
+
+                                    <select id="software_faults" name="software_faults[]" class="form-control">
+                                        <option value="">Software faults</option>
+                                        <optgroup label="Operating System Issues">
+                                            <option>OS not booting / Boot loop</option>
+                                            <option>Blue Screen of Death (BSOD) / Kernel Panic</option>
+                                            <option>Corrupted OS files</option>
+                                            <option>Slow OS performance</option>
+                                            <option>Missing or corrupted system DLL files</option>
+                                            <option>Registry corruption or errors</option>
+                                            <option>Failure after Windows Update / OS Update</option>
+                                            <option>Login failure / User profile corruption</option>
+                                            <option>System freeze / Random crashes</option>
+                                            <option>System clock/date desynchronisation</option>
+                                            <option>Incorrect display resolution / scaling</option>
+                                        </optgroup>
+
+                                        <optgroup label="Driver and Compatibility Issues">
+                                            <option>Missing device drivers</option>
+                                            <option>Corrupted device drivers</option>
+                                            <option>Incompatible driver version</option>
+                                            <option>Driver update failure</option>
+                                            <option>Graphics driver crashes</option>
+                                            <option>Audio driver issues</option>
+                                            <option>Printer/scanner driver problems</option>
+                                            <option>USB device driver not recognized</option>
+                                        </optgroup>
+
+                                        <optgroup label="Application and Software Faults">
+                                            <option>Program not opening / crashing on start</option>
+                                            <option>Application freezing during use</option>
+                                            <option>Corrupted program files</option>
+                                            <option>Incompatible software version</option>
+                                            <option>Missing dependencies (e.g., .NET, Java, Visual C++ Runtimes)
+                                            </option>
+                                            <option>Unresponsive software UI</option>
+                                            <option>Licensing / activation issues</option>
+                                            <option>Software update failure</option>
+                                            <option>Incorrect application configuration</option>
+                                            <option>Data file corruption (e.g., Word, Excel, DB files)</option>
+                                        </optgroup>
+
+                                        <optgroup label="Security and Malware Issues">
+                                            <option>Virus infection</option>
+                                            <option>Spyware infection</option>
+                                            <option>Adware infection</option>
+                                            <option>Ransomware attack</option>
+                                            <option>Trojan horse infection</option>
+                                            <option>Rootkit infection</option>
+                                            <option>Phishing pop-ups / browser hijack</option>
+                                            <option>Unauthorized remote access</option>
+                                            <option>Antivirus not functioning</option>
+                                            <option>Firewall disabled or misconfigured</option>
+                                            <option>Excessive security alerts / false positives</option>
+                                        </optgroup>
+
+                                        <optgroup label="Network and Connectivity Issues">
+                                            <option>No internet connection</option>
+                                            <option>Frequent disconnections</option>
+                                            <option>Slow internet speed</option>
+                                            <option>DNS resolution failure</option>
+                                            <option>Network driver issues</option>
+                                            <option>VPN connection failure</option>
+                                            <option>Proxy misconfiguration</option>
+                                            <option>Wi-Fi authentication failure</option>
+                                            <option>IP conflict</option>
+                                        </optgroup>
+
+                                        <optgroup label="Update and Patch Issues">
+                                            <option>Failed OS update</option>
+                                            <option>Stuck on update screen</option>
+                                            <option>Application update failure</option>
+                                            <option>Rollback after update failure</option>
+                                            <option>Incompatible software after update</option>
+                                        </optgroup>
+
+                                        <optgroup label="File System and Storage Errors">
+                                            <option>Corrupted file system</option>
+                                            <option>Read/write permission errors</option>
+                                            <option>File access denied</option>
+                                            <option>Corrupted partitions</option>
+                                            <option>Missing files or folders</option>
+                                            <option>Slow file transfer speeds</option>
+                                        </optgroup>
+
+                                        <optgroup label="Email and Communication Software Issues">
+                                            <option>Email not sending or receiving</option>
+                                            <option>Corrupted email PST/OST file</option>
+                                            <option>Email application crash</option>
+                                            <option>Spam filter malfunction</option>
+                                            <option>Authentication errors in email client</option>
+                                        </optgroup>
+
+                                        <optgroup label="Browser and Web Issues">
+                                            <option>Browser not opening</option>
+                                            <option>Slow browsing speed</option>
+                                            <option>Corrupted browser profile</option>
+                                            <option>Browser crashes</option>
+                                            <option>Extensions not working</option>
+                                            <option>Excessive pop-ups / unwanted ads</option>
+                                            <option>Bookmarks missing</option>
+                                            <option>History/cache corruption</option>
+                                        </optgroup>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="div">
+                                <label for="">Preferred Contact Date</label>
+                                <div class="input">
+                                    <input type="date" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="balance-checker">
+                        <div class="headcheck">
+                            <img src="images/calculator.png" alt="">
+                            <h4>Estimated Total</h4>
+                        </div>
+                        <div class="checks">
+                            <h2>Device fee:
+
+                            </h2>
+                            <p class="Device-fee">GHs2.00</p>
+                        </div>
+                        <div class="checks">
+                            <h2>Brand fee:
+
+                            </h2>
+                            <p class="Brand-fee">GHs2.00</p>
+                        </div>
+
+                        <div class="checks">
+                            <h2>Service fee:
+
+                            </h2>
+                            <p class="Service-fee">GHs2.00</p>
+                        </div>
+                        <div class="checks">
+                            <h2>Parts (if needed):
+
+                            </h2>
+                            <p class="Parts-fee">GHs34.00</p>
+                        </div>
+                        <div class="checks">
+                            <h2>Tax:
+
+                            </h2>
+                            <p class="Tax-fee">GHs10.00</p>
+                        </div>
+                        <div class="checks">
+                            <h3>Total:</h3>
+                            <p class="Total-fee">GHs0.00</p>
                         </div>
                     </div>
-                    <div class="div">
-                        <label for="">Phone Number</label>
-                        <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980"  required>
-                        </div>
+
+                    <div class="submit">
+                        <button class="submitrequest">
+                            <p>Submit Request</p>
+                            <img src="images/paper-plane.png" alt="">
+                        </button>
                     </div>
-                    <div class="div">
-                        <label for="">Email Address</label>
-                        <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com" required>
+            </section>
+        </form>
+
+        <section class="forms1 tab-content" id="bulk-tab">
+            <div class="forms-flex">
+                <div class="label">
+                    <img src="images/crowd-of-users.png" alt="">
+                    <p>Bulk Service Request</p>
+                </div>
+                <div class="form-individual">
+                    <div class="oneside">
+                        <div class="div">
+                            <label for="">Requesting Group/Team Name</label>
+                            <div class="input">
+                                <input type="text" name="full-name" placeholder="Enter your name..." required>
+                            </div>
                         </div>
+                        <div class="div">
+                            <label for="">Contact Person Name</label>
+                            <div class="input">
+                                <input type="text" name="full-name" placeholder="Enter your name..." required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Contact Number</label>
+                            <div class="input">
+                                <input type="number" name="number" placeholder="+233 859 456 980" required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Number of Devices </label>
+                            <div class="input">
+                                <input type="number" name="number" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Email Address</label>
+                            <div class="input">
+                                <input type="email" name="email" placeholder="username@email.com" required>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="div">
-                        <label for="">Device Type</label>
-                        <div class="input">
-                            <select name="" id="device-type" required>
-                                <option value="">Select your device</option>
+                    <div class="oneside">
 
-                                <option value="Laptop">Laptop</option>
-                                <option value="Desktop">Desktop</option>
-                                <option value="Tablet">Tablet</option>
-                                <option value="Smartphone">Smartphone</option>
-                                <option value="Printer">Printer</option>
+                        <div class="div">
+                            <label for="">Device Type</label>
+                            <div class="input">
+                                <select name="" id="device-types" required>
+                                    <option value="">Select your device</option>
 
-                            </select>
+                                    <option value="Laptops">Laptop</option>
+                                    <option value="Desktops">Desktop</option>
+                                    <option value="Tablets">Tablet</option>
+                                    <option value="Smartphones">Smartphone</option>
+                                    <option value="Printers">Printer</option>
+
+                                </select>
+
+                            </div>
 
                         </div>
 
+                        <div class="div">
+                            <label for="">Device Brand</label>
+                            <div class="input">
+                                <select name="" id="device-brands" required>
+                                    <option value="">Select device brand</option>
+
+                                    <option value="Apples">Apple</option>
+                                    <option value="Dells">Dell</option>
+                                    <option value="HPs">HP</option>
+                                    <option value="Lenovos">Lenovo</option>
+                                    <option value="Sumsungs">Sumsung</option>
+                                    <option value="Microsofts">Microsoft</option>
+
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Fault description</label>
+                            <div class="input">
+
+                                <div class="custom-select1" id="hardwareDropdown1">
+                                    <div class="select-box1" id="selectedText1">Select Hardware Fault(s)</div>
+                                    <div class="options-container1">
+
+                                        <strong>Power & Boot Issues</strong>
+                                        <label><input type="checkbox" value="Device not powering on"> Device not
+                                            powering on</label>
+                                        <label><input type="checkbox" value="Intermittent power loss"> Intermittent
+                                            power loss</label>
+                                        <label><input type="checkbox" value="Loose or faulty power jack (DC jack)">
+                                            Loose or faulty power jack (DC jack)</label>
+                                        <label><input type="checkbox" value="Battery not charging"> Battery not
+                                            charging</label>
+                                        <label><input type="checkbox" value="Battery drains quickly"> Battery drains
+                                            quickly</label>
+                                        <label><input type="checkbox" value="Power button failure"> Power button
+                                            failure</label>
+                                        <label><input type="checkbox" value="Boot loop (continuous restart)"> Boot loop
+                                            (continuous restart)</label>
+                                        <label><input type="checkbox" value="BIOS/UEFI corruption"> BIOS/UEFI
+                                            corruption</label>
+                                        <label><input type="checkbox" value="POST errors / Beep codes"> POST errors /
+                                            Beep codes</label>
+                                        <label><input type="checkbox" value="No display on boot"> No display on
+                                            boot</label>
+
+                                        <strong>Display & Graphics Issues</strong>
+                                        <label><input type="checkbox" value="Cracked/broken screen"> Cracked/broken
+                                            screen</label>
+                                        <label><input type="checkbox" value="Dead pixels or stuck pixels"> Dead pixels
+                                            or stuck pixels</label>
+                                        <label><input type="checkbox" value="Dim or no backlight"> Dim or no
+                                            backlight</label>
+                                        <label><input type="checkbox" value="Flickering display"> Flickering
+                                            display</label>
+                                        <label><input type="checkbox" value="Lines or artifacts on screen"> Lines or
+                                            artifacts on screen</label>
+                                        <label><input type="checkbox" value="Display color distortion"> Display color
+                                            distortion</label>
+                                        <label><input type="checkbox" value="Screen not detecting external display">
+                                            Screen not detecting external display</label>
+                                        <label><input type="checkbox" value="Loose or damaged LVDS/eDP cable"> Loose or
+                                            damaged LVDS/eDP cable</label>
+                                        <label><input type="checkbox" value="Faulty GPU (Graphics Card)"> Faulty GPU
+                                            (Graphics Card)</label>
+                                        <label><input type="checkbox" value="Overheating GPU"> Overheating GPU</label>
+
+                                        <strong>Keyboard & Input Devices</strong>
+                                        <label><input type="checkbox" value="Keys not responding"> Keys not
+                                            responding</label>
+                                        <label><input type="checkbox" value="Sticky keys"> Sticky keys</label>
+                                        <label><input type="checkbox" value="Broken or missing keys"> Broken or missing
+                                            keys</label>
+                                        <label><input type="checkbox" value="Keyboard backlight failure"> Keyboard
+                                            backlight failure</label>
+                                        <label><input type="checkbox" value="Touchpad not working">Touchpad not
+                                            working</label>
+                                        <label><input type="checkbox" value="Erratic cursor movement">Erratic cursor
+                                            movement</label>
+                                        <label><input type="checkbox" value="Touchscreen unresponsive"> Touchscreen
+                                            unresponsive</label>
+
+
+                                        <strong>Storage & Data Issues</strong>
+                                        <label><input type="checkbox" value="Hard drive not detected"> Hard drive not
+                                            detected</label>
+                                        <label><input type="checkbox" value="SSD not detected ">SSD not detected</label>
+                                        <label><input type="checkbox" value="Slow read/write speeds"> Slow read/write
+                                            speeds</label>
+                                        <label><input type="checkbox" value="Clicking or grinding HDD noise">Clicking or
+                                            grinding HDD noise</label>
+                                        <label><input type="checkbox" value="Bad sectors on HDD">Bad sectors on
+                                            HDD</label>
+                                        <label><input type="checkbox" value="Corrupted file system">Corrupted file
+                                            system</label>
+                                        <label><input type="checkbox" value="Drive overheating">Drive
+                                            overheating</label>
+
+
+                                        <strong>Memory (RAM) Issues</strong>
+                                        <label><input type="checkbox" value="System not detecting RAM">System not
+                                            detecting RAM</label>
+                                        <label><input type="checkbox" value="Frequent system crashes (BSODs)">Frequent
+                                            system crashes (BSODs)</label>
+                                        <label><input type="checkbox" value="Memory errors during POST">Memory errors
+                                            during POST</label>
+                                        <label><input type="checkbox" value="RAM slot failure">RAM slot failure</label>
+
+                                        <strong>Cooling & Overheating</strong>
+                                        <label><input type="checkbox" value="Overheating CPU">Overheating CPU</label>
+                                        <label><input type="checkbox" value="Fan not spinning">Fan not spinning</label>
+                                        <label><input type="checkbox" value="Fan noise / grinding">Fan noise /
+                                            grinding</label>
+                                        <label><input type="checkbox" value="Clogged heatsink or dust buildup"> Clogged
+                                            heatsink or dust buildup</label>
+
+
+                                        <strong>Ports & Connectivity</strong>
+                                        <label><input type="checkbox" value="USB ports not working">USB ports not
+                                            working</label>
+                                        <label><input type="checkbox"
+                                                value="HDMI/DisplayPort not working">HDMI/DisplayPort not
+                                            working</label>
+                                        <label><input type="checkbox" value="Ethernet port failure">Ethernet port
+                                            failure</label>
+                                        <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                            static/no sound</label>
+                                        <label><input type="checkbox" value="Loose or damaged connectors">Loose or
+                                            damaged connectors</label>
+                                        <label><input type="checkbox" value="Card reader not detecting">Card reader not
+                                            detecting</label>
+
+                                        <strong>Audio & Sound Issues</strong>
+                                        <label><input type="checkbox" value="No audio output">No audio output</label>
+                                        <label><input type="checkbox" value="Distorted sound">Distorted sound</label>
+                                        <label><input type="checkbox" value="One speaker not working">One speaker not
+                                            working</label>
+                                        <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                            static/no sound</label>
+                                        <label><input type="checkbox" value="Microphone not detecting">Microphone not
+                                            detecting</label>
+                                        <label><input type="checkbox" value="Audio driver failure">Audio driver
+                                            failure</label>
+
+
+                                        <strong>Network & Wireless Issues</strong>
+                                        <label><input type="checkbox" value="Wi-Fi not detecting networks">Wi-Fi not
+                                            detecting networks</label>
+                                        <label><input type="checkbox" value="Wi-Fi drops connection">Wi-Fi drops
+                                            connection</label>
+                                        <label><input type="checkbox" value="Bluetooth not working">Bluetooth not
+                                            working</label>
+                                        <label><input type="checkbox" value="Weak signal reception">Weak signal
+                                            reception</label>
+                                        <label><input type="checkbox" value="Network adapter failure">Network adapter
+                                            failure</label>
+
+                                        <strong>Optical Drive Issues</strong>
+                                        <label><input type="checkbox" value="CD/DVD not reading">CD/DVD not
+                                            reading</label>
+                                        <label><input type="checkbox" value="CD/DVD not ejecting">CD/DVD not
+                                            ejecting</label>
+                                        <label><input type="checkbox" value="Noisy optical drive">Noisy optical
+                                            drive</label>
+
+
+                                        <strong>Motherboard & Chipset Issues</strong>
+                                        <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                            damage</label>
+                                        <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                            damage</label>
+                                        <label><input type="checkbox" value="Burnt components">Burnt components</label>
+                                        <label><input type="checkbox" value="Faulty CMOS battery">Faulty CMOS
+                                            battery</label>
+                                        <label><input type="checkbox" value="Damaged capacitors">Damaged
+                                            capacitors</label>
+                                        <label><input type="checkbox"
+                                                value="Southbridge/Northbridge failure">Southbridge/Northbridge
+                                            failure</label>
+
+
+                                        <strong>Casing & Physical Damage</strong>
+                                        <label><input type="checkbox" value="Broken hinges">Broken hinges</label>
+                                        <label><input type="checkbox" value="Cracked casing">Cracked casing</label>
+                                        <label><input type="checkbox" value="Loose screws">Loose screws</label>
+                                        <label><input type="checkbox" value="Damaged bezels">Damaged bezels</label>
+                                        <label><input type="checkbox" value="Liquid damage">Liquid damage</label>
+
+                                        <strong>Peripheral Issues</strong>
+                                        <label><input type="checkbox" value="External keyboard not detected">External
+                                            keyboard not detected</label>
+                                        <label><input type="checkbox" value="External mouse not detected">External mouse
+                                            not detected</label>
+                                        <label><input type="checkbox" value="Printer connection issues">Printer
+                                            connection issues</label>
+                                        <label><input type="checkbox" value="Docking station issues">Docking station
+                                            issues</label>
+
+                                        <strong>BIOS & Firmware Issues</strong>
+                                        <label><input type="checkbox" value="BIOS password lock">BIOS password
+                                            lock</label>
+                                        <label><input type="checkbox" value="Firmware corruption">Firmware
+                                            corruption</label>
+                                        <label><input type="checkbox" value="Boot order misconfiguration">Boot order
+                                            misconfiguration</label>
+                                        <label><input type="checkbox" value="BIOS update failure">BIOS update
+                                            failure</label>
+
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input">
+
+                                <select id="software_faults" name="software_faults[]" class="form-control">
+                                    <option value="">Software faults</option>
+                                    <optgroup label="Operating System Issues">
+                                        <option>OS not booting / Boot loop</option>
+                                        <option>Blue Screen of Death (BSOD) / Kernel Panic</option>
+                                        <option>Corrupted OS files</option>
+                                        <option>Slow OS performance</option>
+                                        <option>Missing or corrupted system DLL files</option>
+                                        <option>Registry corruption or errors</option>
+                                        <option>Failure after Windows Update / OS Update</option>
+                                        <option>Login failure / User profile corruption</option>
+                                        <option>System freeze / Random crashes</option>
+                                        <option>System clock/date desynchronisation</option>
+                                        <option>Incorrect display resolution / scaling</option>
+                                    </optgroup>
+
+                                    <optgroup label="Driver and Compatibility Issues">
+                                        <option>Missing device drivers</option>
+                                        <option>Corrupted device drivers</option>
+                                        <option>Incompatible driver version</option>
+                                        <option>Driver update failure</option>
+                                        <option>Graphics driver crashes</option>
+                                        <option>Audio driver issues</option>
+                                        <option>Printer/scanner driver problems</option>
+                                        <option>USB device driver not recognized</option>
+                                    </optgroup>
+
+                                    <optgroup label="Application and Software Faults">
+                                        <option>Program not opening / crashing on start</option>
+                                        <option>Application freezing during use</option>
+                                        <option>Corrupted program files</option>
+                                        <option>Incompatible software version</option>
+                                        <option>Missing dependencies (e.g., .NET, Java, Visual C++ Runtimes)</option>
+                                        <option>Unresponsive software UI</option>
+                                        <option>Licensing / activation issues</option>
+                                        <option>Software update failure</option>
+                                        <option>Incorrect application configuration</option>
+                                        <option>Data file corruption (e.g., Word, Excel, DB files)</option>
+                                    </optgroup>
+
+                                    <optgroup label="Security and Malware Issues">
+                                        <option>Virus infection</option>
+                                        <option>Spyware infection</option>
+                                        <option>Adware infection</option>
+                                        <option>Ransomware attack</option>
+                                        <option>Trojan horse infection</option>
+                                        <option>Rootkit infection</option>
+                                        <option>Phishing pop-ups / browser hijack</option>
+                                        <option>Unauthorized remote access</option>
+                                        <option>Antivirus not functioning</option>
+                                        <option>Firewall disabled or misconfigured</option>
+                                        <option>Excessive security alerts / false positives</option>
+                                    </optgroup>
+
+                                    <optgroup label="Network and Connectivity Issues">
+                                        <option>No internet connection</option>
+                                        <option>Frequent disconnections</option>
+                                        <option>Slow internet speed</option>
+                                        <option>DNS resolution failure</option>
+                                        <option>Network driver issues</option>
+                                        <option>VPN connection failure</option>
+                                        <option>Proxy misconfiguration</option>
+                                        <option>Wi-Fi authentication failure</option>
+                                        <option>IP conflict</option>
+                                    </optgroup>
+
+                                    <optgroup label="Update and Patch Issues">
+                                        <option>Failed OS update</option>
+                                        <option>Stuck on update screen</option>
+                                        <option>Application update failure</option>
+                                        <option>Rollback after update failure</option>
+                                        <option>Incompatible software after update</option>
+                                    </optgroup>
+
+                                    <optgroup label="File System and Storage Errors">
+                                        <option>Corrupted file system</option>
+                                        <option>Read/write permission errors</option>
+                                        <option>File access denied</option>
+                                        <option>Corrupted partitions</option>
+                                        <option>Missing files or folders</option>
+                                        <option>Slow file transfer speeds</option>
+                                    </optgroup>
+
+                                    <optgroup label="Email and Communication Software Issues">
+                                        <option>Email not sending or receiving</option>
+                                        <option>Corrupted email PST/OST file</option>
+                                        <option>Email application crash</option>
+                                        <option>Spam filter malfunction</option>
+                                        <option>Authentication errors in email client</option>
+                                    </optgroup>
+
+                                    <optgroup label="Browser and Web Issues">
+                                        <option>Browser not opening</option>
+                                        <option>Slow browsing speed</option>
+                                        <option>Corrupted browser profile</option>
+                                        <option>Browser crashes</option>
+                                        <option>Extensions not working</option>
+                                        <option>Excessive pop-ups / unwanted ads</option>
+                                        <option>Bookmarks missing</option>
+                                        <option>History/cache corruption</option>
+                                    </optgroup>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Preferred Contact Date</label>
+                            <div class="input">
+                                <input type="date" required>
+                            </div>
+                        </div>
                     </div>
 
 
                 </div>
-                <div class="oneside">
-                    <div class="div">
-                        <label for="">Device Brand</label>
-                        <div class="input">
-                            <select name="" id="device-brand" required>
-                                <option value="">Select device brand</option>
-
-                                <option value="Apple">Apple</option>
-                                <option value="Dell">Dell</option>
-                                <option value="HP">HP</option>
-                                <option value="Lenovo">Lenovo</option>
-                                <option value="Sumsung">Sumsung</option>
-                                <option value="Microsoft">Microsoft</option>
-
-
-                            </select>
-
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Nature of Issue</label>
-                        <div class="input1">
-                            <textarea name="" id=""></textarea>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Preferred Contact Date</label>
-                        <div class="input">
-                            <input type="date" required>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-<div class="balance-checker">
-                    <div class="headcheck">
-                        <img src="images/calculator.png" alt="">
-                        <h4>Estimated Total</h4>
-                    </div>
-                     <div class="checks">
-                        <h2>Device fee:
-
-</h2>
-                        <p class="Device-fee">GHs2.00</p>
-                    </div> <div class="checks">
-                        <h2>Brand fee:
-
-</h2>
-                        <p class="Brand-fee">GHs2.00</p>
-                    </div>
-
-                    <div class="checks">
-                        <h2>Service fee:
-
-</h2>
-                        <p class="Service-fee">GHs2.00</p>
-                    </div>
-                    <div class="checks">
-                        <h2>Parts (if needed):
-
-</h2>
-                        <p class="Parts-fee">GHs34.00</p>
-                    </div>
-                    <div class="checks">
-                        <h2>Tax:
-
-</h2>
-                        <p class="Tax-fee">GHs10.00</p>
-                    </div>
-                    <div class="checks">
-                        <h3>Total:</h3>
-                        <p class="Total-fee">GHs0.00</p>
-                    </div>
-                </div>
-
-                <div class="submit">
-                    <button class="submitrequest">
-                    <p>Submit Request</p>
-                    <img src="images/paper-plane.png" alt="">
-                </button>
-                </div>
-    </section>
-    </form>
-
-    <section class="forms1 tab-content" id="bulk-tab">
-        <div class="forms-flex">
-            <div class="label">
-                <img src="images/crowd-of-users.png" alt="">
-                <p>Bulk Service Request</p>
-            </div>
-            <div class="form-individual">
-                <div class="oneside">
-                    <div class="div">
-                        <label for="">Requesting Group/Team Name</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name..." required>
-                        </div>
-                    </div>
-                      <div class="div">
-                        <label for="">Contact Person Name</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name..." required>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Contact Number</label>
-                        <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980" required>
-                        </div>
-                    </div>
-                     <div class="div">
-                        <label for="">Number of Devices </label>
-                        <div class="input">
-                            <input type="number" name="number" placeholder="" required>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Email Address</label>
-                        <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com" required>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="oneside">
-                    
-                    <div class="div">
-                        <label for="">Device Type</label>
-                         <div class="input">
-                            <select name="" id="device-types" required>
-                                <option value="">Select your device</option>
-
-                                <option value="Laptops">Laptop</option>
-                                <option value="Desktops">Desktop</option>
-                                <option value="Tablets">Tablet</option>
-                                <option value="Smartphones">Smartphone</option>
-                                <option value="Printers">Printer</option>
-
-                            </select>
-
-                        </div>
-
-                    </div>
-
-                    <div class="div">
-                        <label for="">Device Brand</label>
-                       <div class="input">
-                            <select name="" id="device-brands" required>
-                                <option value="">Select device brand</option>
-
-                                <option value="Apples">Apple</option>
-                                <option value="Dells">Dell</option>
-                                <option value="HPs">HP</option>
-                                <option value="Lenovos">Lenovo</option>
-                                <option value="Sumsungs">Sumsung</option>
-                                <option value="Microsofts">Microsoft</option>
-
-
-                            </select>
-
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Nature of Issue</label>
-                        <div class="input1">
-                            <textarea name="" id=""></textarea>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Preferred Contact Date</label>
-                        <div class="input">
-                            <input type="date" required>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-<div class="balance-checker1">
+                <div class="balance-checker1">
                     <div class="headcheck1">
                         <img src="images/calculator (1).png" alt="">
                         <h4>Estimated Total</h4>
                     </div>
-                     <div class="checks">
+                    <div class="checks">
                         <h2>Device fee:
 
-</h2>
+                        </h2>
                         <p class="Device-fees">GHs2.00</p>
-                    </div> <div class="checks">
+                    </div>
+                    <div class="checks">
                         <h2>Brand fee:
 
-</h2>
+                        </h2>
                         <p class="Brand-fees">GHs2.00</p>
                     </div>
 
                     <div class="checks">
                         <h2>Service fee:
 
-</h2>
+                        </h2>
                         <p class="Service-fees">GHs2.00</p>
                     </div>
                     <div class="checks">
                         <h2>Parts (if needed):
 
-</h2>
+                        </h2>
                         <p class="Parts-fees">GHs34.00</p>
                     </div>
                     <div class="checks">
                         <h2>Tax:
 
-</h2>
+                        </h2>
                         <p class="Tax-fees">GHs10.00</p>
                     </div>
                     <div class="checks">
@@ -303,145 +961,448 @@
                 </div>
                 <div class="submit">
                     <button class="submitrequest">
-                    <p>Submit Request</p>
-                    <img src="images/paper-plane.png" alt="">
-                </button>
+                        <p>Submit Request</p>
+                        <img src="images/paper-plane.png" alt="">
+                    </button>
                 </div>
-    </section>
-    
-    <section class="forms2 tab-content" id="org-tab">
-        <div class="forms-flex">
-            <div class="label">
-                <img src="images/building.png" alt="">
-                <p>Organizational Service Request</p>
-            </div>
-            <div class="form-individual">
-                <div class="oneside">
-                    <div class="div">
-                        <label for="">Organization Name</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your Organization name..." required>
-                        </div>
-                    </div>
-                     <div class="div">
-                        <label for="">Contact Person</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="Enter your name..." required>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Phone Number</label>
-                        <div class="input">
-                            <input type="number" name="number" placeholder="+233 859 456 980" required>
-                        </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Contact Email</label>
-                        <div class="input">
-                            <input type="email" name="email" placeholder="username@email.com" required>
-                        </div>
-                    </div>
-                     <div class="div">
-                        <label for="">Department</label>
-                        <div class="input">
-                            <input type="text" name="full-name" placeholder="" required>
-                        </div>
-                    </div>
-                     <div class="div">
-                        <label for="">Number of Devices </label>
-                        <div class="input">
-                            <input type="number" name="number" placeholder="" required>
-                        </div>
-                    </div>
-                   
+        </section>
+
+        <section class="forms2 tab-content" id="org-tab">
+            <div class="forms-flex">
+                <div class="label">
+                    <img src="images/building.png" alt="">
+                    <p>Organizational Service Request</p>
                 </div>
-                <div class="oneside">
-                     <div class="div">
-                        <label for="">Device Type</label>
-                          <div class="input">
-                            <select name="" id="device-types1" required>
-                                <option value="">Select your device</option>
-
-                                <option value="Laptops1">Laptop</option>
-                                <option value="Desktops1">Desktop</option>
-                                <option value="Tablets1">Tablet</option>
-                                <option value="Smartphones1">Smartphone</option>
-                                <option value="Printers1">Printer</option>
-
-                            </select>
-
+                <div class="form-individual">
+                    <div class="oneside">
+                        <div class="div">
+                            <label for="">Organization Name</label>
+                            <div class="input">
+                                <input type="text" name="full-name" placeholder="Enter your Organization name..."
+                                    required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Contact Person</label>
+                            <div class="input">
+                                <input type="text" name="full-name" placeholder="Enter your name..." required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Phone Number</label>
+                            <div class="input">
+                                <input type="number" name="number" placeholder="+233 859 456 980" required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Contact Email</label>
+                            <div class="input">
+                                <input type="email" name="email" placeholder="username@email.com" required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Department</label>
+                            <div class="input">
+                                <input type="text" name="full-name" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Number of Devices </label>
+                            <div class="input">
+                                <input type="number" name="number" placeholder="" required>
+                            </div>
                         </div>
 
                     </div>
+                    <div class="oneside">
+                        <div class="div">
+                            <label for="">Device Type</label>
+                            <div class="input">
+                                <select name="" id="device-types1" required>
+                                    <option value="">Select your device</option>
 
+                                    <option value="Laptops1">Laptop</option>
+                                    <option value="Desktops1">Desktop</option>
+                                    <option value="Tablets1">Tablet</option>
+                                    <option value="Smartphones1">Smartphone</option>
+                                    <option value="Printers1">Printer</option>
 
-                    <div class="div">
-                        <label for="">Device Brand</label>
-                      <div class="input">
-                            <select name="" id="device-brands1" required>
-                                <option value="">Select device brand</option>
+                                </select>
 
-                                <option value="Apples1">Apple</option>
-                                <option value="Dells1">Dell</option>
-                                <option value="HPs1">HP</option>
-                                <option value="Lenovos1">Lenovo</option>
-                                <option value="Sumsungs1">Sumsung</option>
-                                <option value="Microsofts1">Microsoft</option>
-
-
-                            </select>
+                            </div>
 
                         </div>
-                    </div>
-                    <div class="div">
-                        <label for="">Nature of Issue</label>
-                        <div class="input1">
-                            <textarea name="" id=""></textarea>
+
+
+                        <div class="div">
+                            <label for="">Device Brand</label>
+                            <div class="input">
+                                <select name="" id="device-brands1" required>
+                                    <option value="">Select device brand</option>
+
+                                    <option value="Apples1">Apple</option>
+                                    <option value="Dells1">Dell</option>
+                                    <option value="HPs1">HP</option>
+                                    <option value="Lenovos1">Lenovo</option>
+                                    <option value="Sumsungs1">Sumsung</option>
+                                    <option value="Microsofts1">Microsoft</option>
+
+
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Fault description</label>
+                            <div class="input">
+
+                                <div class="custom-select2" id="hardwareDropdown2">
+                                    <div class="select-box2" id="selectedText2">Select Hardware Fault(s)</div>
+                                    <div class="options-container2">
+
+                                        <strong>Power & Boot Issues</strong>
+                                        <label><input type="checkbox" value="Device not powering on"> Device not
+                                            powering on</label>
+                                        <label><input type="checkbox" value="Intermittent power loss"> Intermittent
+                                            power loss</label>
+                                        <label><input type="checkbox" value="Loose or faulty power jack (DC jack)">
+                                            Loose or faulty power jack (DC jack)</label>
+                                        <label><input type="checkbox" value="Battery not charging"> Battery not
+                                            charging</label>
+                                        <label><input type="checkbox" value="Battery drains quickly"> Battery drains
+                                            quickly</label>
+                                        <label><input type="checkbox" value="Power button failure"> Power button
+                                            failure</label>
+                                        <label><input type="checkbox" value="Boot loop (continuous restart)"> Boot loop
+                                            (continuous restart)</label>
+                                        <label><input type="checkbox" value="BIOS/UEFI corruption"> BIOS/UEFI
+                                            corruption</label>
+                                        <label><input type="checkbox" value="POST errors / Beep codes"> POST errors /
+                                            Beep codes</label>
+                                        <label><input type="checkbox" value="No display on boot"> No display on
+                                            boot</label>
+
+                                        <strong>Display & Graphics Issues</strong>
+                                        <label><input type="checkbox" value="Cracked/broken screen"> Cracked/broken
+                                            screen</label>
+                                        <label><input type="checkbox" value="Dead pixels or stuck pixels"> Dead pixels
+                                            or stuck pixels</label>
+                                        <label><input type="checkbox" value="Dim or no backlight"> Dim or no
+                                            backlight</label>
+                                        <label><input type="checkbox" value="Flickering display"> Flickering
+                                            display</label>
+                                        <label><input type="checkbox" value="Lines or artifacts on screen"> Lines or
+                                            artifacts on screen</label>
+                                        <label><input type="checkbox" value="Display color distortion"> Display color
+                                            distortion</label>
+                                        <label><input type="checkbox" value="Screen not detecting external display">
+                                            Screen not detecting external display</label>
+                                        <label><input type="checkbox" value="Loose or damaged LVDS/eDP cable"> Loose or
+                                            damaged LVDS/eDP cable</label>
+                                        <label><input type="checkbox" value="Faulty GPU (Graphics Card)"> Faulty GPU
+                                            (Graphics Card)</label>
+                                        <label><input type="checkbox" value="Overheating GPU"> Overheating GPU</label>
+
+                                        <strong>Keyboard & Input Devices</strong>
+                                        <label><input type="checkbox" value="Keys not responding"> Keys not
+                                            responding</label>
+                                        <label><input type="checkbox" value="Sticky keys"> Sticky keys</label>
+                                        <label><input type="checkbox" value="Broken or missing keys"> Broken or missing
+                                            keys</label>
+                                        <label><input type="checkbox" value="Keyboard backlight failure"> Keyboard
+                                            backlight failure</label>
+                                        <label><input type="checkbox" value="Touchpad not working">Touchpad not
+                                            working</label>
+                                        <label><input type="checkbox" value="Erratic cursor movement">Erratic cursor
+                                            movement</label>
+                                        <label><input type="checkbox" value="Touchscreen unresponsive"> Touchscreen
+                                            unresponsive</label>
+
+
+                                        <strong>Storage & Data Issues</strong>
+                                        <label><input type="checkbox" value="Hard drive not detected"> Hard drive not
+                                            detected</label>
+                                        <label><input type="checkbox" value="SSD not detected ">SSD not detected</label>
+                                        <label><input type="checkbox" value="Slow read/write speeds"> Slow read/write
+                                            speeds</label>
+                                        <label><input type="checkbox" value="Clicking or grinding HDD noise">Clicking or
+                                            grinding HDD noise</label>
+                                        <label><input type="checkbox" value="Bad sectors on HDD">Bad sectors on
+                                            HDD</label>
+                                        <label><input type="checkbox" value="Corrupted file system">Corrupted file
+                                            system</label>
+                                        <label><input type="checkbox" value="Drive overheating">Drive
+                                            overheating</label>
+
+
+                                        <strong>Memory (RAM) Issues</strong>
+                                        <label><input type="checkbox" value="System not detecting RAM">System not
+                                            detecting RAM</label>
+                                        <label><input type="checkbox" value="Frequent system crashes (BSODs)">Frequent
+                                            system crashes (BSODs)</label>
+                                        <label><input type="checkbox" value="Memory errors during POST">Memory errors
+                                            during POST</label>
+                                        <label><input type="checkbox" value="RAM slot failure">RAM slot failure</label>
+
+                                        <strong>Cooling & Overheating</strong>
+                                        <label><input type="checkbox" value="Overheating CPU">Overheating CPU</label>
+                                        <label><input type="checkbox" value="Fan not spinning">Fan not spinning</label>
+                                        <label><input type="checkbox" value="Fan noise / grinding">Fan noise /
+                                            grinding</label>
+                                        <label><input type="checkbox" value="Clogged heatsink or dust buildup"> Clogged
+                                            heatsink or dust buildup</label>
+
+
+                                        <strong>Ports & Connectivity</strong>
+                                        <label><input type="checkbox" value="USB ports not working">USB ports not
+                                            working</label>
+                                        <label><input type="checkbox"
+                                                value="HDMI/DisplayPort not working">HDMI/DisplayPort not
+                                            working</label>
+                                        <label><input type="checkbox" value="Ethernet port failure">Ethernet port
+                                            failure</label>
+                                        <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                            static/no sound</label>
+                                        <label><input type="checkbox" value="Loose or damaged connectors">Loose or
+                                            damaged connectors</label>
+                                        <label><input type="checkbox" value="Card reader not detecting">Card reader not
+                                            detecting</label>
+
+                                        <strong>Audio & Sound Issues</strong>
+                                        <label><input type="checkbox" value="No audio output">No audio output</label>
+                                        <label><input type="checkbox" value="Distorted sound">Distorted sound</label>
+                                        <label><input type="checkbox" value="One speaker not working">One speaker not
+                                            working</label>
+                                        <label><input type="checkbox" value="Audio jack static/no sound"> Audio jack
+                                            static/no sound</label>
+                                        <label><input type="checkbox" value="Microphone not detecting">Microphone not
+                                            detecting</label>
+                                        <label><input type="checkbox" value="Audio driver failure">Audio driver
+                                            failure</label>
+
+
+                                        <strong>Network & Wireless Issues</strong>
+                                        <label><input type="checkbox" value="Wi-Fi not detecting networks">Wi-Fi not
+                                            detecting networks</label>
+                                        <label><input type="checkbox" value="Wi-Fi drops connection">Wi-Fi drops
+                                            connection</label>
+                                        <label><input type="checkbox" value="Bluetooth not working">Bluetooth not
+                                            working</label>
+                                        <label><input type="checkbox" value="Weak signal reception">Weak signal
+                                            reception</label>
+                                        <label><input type="checkbox" value="Network adapter failure">Network adapter
+                                            failure</label>
+
+                                        <strong>Optical Drive Issues</strong>
+                                        <label><input type="checkbox" value="CD/DVD not reading">CD/DVD not
+                                            reading</label>
+                                        <label><input type="checkbox" value="CD/DVD not ejecting">CD/DVD not
+                                            ejecting</label>
+                                        <label><input type="checkbox" value="Noisy optical drive">Noisy optical
+                                            drive</label>
+
+
+                                        <strong>Motherboard & Chipset Issues</strong>
+                                        <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                            damage</label>
+                                        <label><input type="checkbox" value="Short circuit damage">Short circuit
+                                            damage</label>
+                                        <label><input type="checkbox" value="Burnt components">Burnt components</label>
+                                        <label><input type="checkbox" value="Faulty CMOS battery">Faulty CMOS
+                                            battery</label>
+                                        <label><input type="checkbox" value="Damaged capacitors">Damaged
+                                            capacitors</label>
+                                        <label><input type="checkbox"
+                                                value="Southbridge/Northbridge failure">Southbridge/Northbridge
+                                            failure</label>
+
+
+                                        <strong>Casing & Physical Damage</strong>
+                                        <label><input type="checkbox" value="Broken hinges">Broken hinges</label>
+                                        <label><input type="checkbox" value="Cracked casing">Cracked casing</label>
+                                        <label><input type="checkbox" value="Loose screws">Loose screws</label>
+                                        <label><input type="checkbox" value="Damaged bezels">Damaged bezels</label>
+                                        <label><input type="checkbox" value="Liquid damage">Liquid damage</label>
+
+                                        <strong>Peripheral Issues</strong>
+                                        <label><input type="checkbox" value="External keyboard not detected">External
+                                            keyboard not detected</label>
+                                        <label><input type="checkbox" value="External mouse not detected">External mouse
+                                            not detected</label>
+                                        <label><input type="checkbox" value="Printer connection issues">Printer
+                                            connection issues</label>
+                                        <label><input type="checkbox" value="Docking station issues">Docking station
+                                            issues</label>
+
+                                        <strong>BIOS & Firmware Issues</strong>
+                                        <label><input type="checkbox" value="BIOS password lock">BIOS password
+                                            lock</label>
+                                        <label><input type="checkbox" value="Firmware corruption">Firmware
+                                            corruption</label>
+                                        <label><input type="checkbox" value="Boot order misconfiguration">Boot order
+                                            misconfiguration</label>
+                                        <label><input type="checkbox" value="BIOS update failure">BIOS update
+                                            failure</label>
+
+
+
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="input">
+
+                                <select id="software_faults" name="software_faults[]" class="form-control">
+                                    <option value="">Software faults</option>
+                                    <optgroup label="Operating System Issues">
+                                        <option>OS not booting / Boot loop</option>
+                                        <option>Blue Screen of Death (BSOD) / Kernel Panic</option>
+                                        <option>Corrupted OS files</option>
+                                        <option>Slow OS performance</option>
+                                        <option>Missing or corrupted system DLL files</option>
+                                        <option>Registry corruption or errors</option>
+                                        <option>Failure after Windows Update / OS Update</option>
+                                        <option>Login failure / User profile corruption</option>
+                                        <option>System freeze / Random crashes</option>
+                                        <option>System clock/date desynchronisation</option>
+                                        <option>Incorrect display resolution / scaling</option>
+                                    </optgroup>
+
+                                    <optgroup label="Driver and Compatibility Issues">
+                                        <option>Missing device drivers</option>
+                                        <option>Corrupted device drivers</option>
+                                        <option>Incompatible driver version</option>
+                                        <option>Driver update failure</option>
+                                        <option>Graphics driver crashes</option>
+                                        <option>Audio driver issues</option>
+                                        <option>Printer/scanner driver problems</option>
+                                        <option>USB device driver not recognized</option>
+                                    </optgroup>
+
+                                    <optgroup label="Application and Software Faults">
+                                        <option>Program not opening / crashing on start</option>
+                                        <option>Application freezing during use</option>
+                                        <option>Corrupted program files</option>
+                                        <option>Incompatible software version</option>
+                                        <option>Missing dependencies (e.g., .NET, Java, Visual C++ Runtimes)</option>
+                                        <option>Unresponsive software UI</option>
+                                        <option>Licensing / activation issues</option>
+                                        <option>Software update failure</option>
+                                        <option>Incorrect application configuration</option>
+                                        <option>Data file corruption (e.g., Word, Excel, DB files)</option>
+                                    </optgroup>
+
+                                    <optgroup label="Security and Malware Issues">
+                                        <option>Virus infection</option>
+                                        <option>Spyware infection</option>
+                                        <option>Adware infection</option>
+                                        <option>Ransomware attack</option>
+                                        <option>Trojan horse infection</option>
+                                        <option>Rootkit infection</option>
+                                        <option>Phishing pop-ups / browser hijack</option>
+                                        <option>Unauthorized remote access</option>
+                                        <option>Antivirus not functioning</option>
+                                        <option>Firewall disabled or misconfigured</option>
+                                        <option>Excessive security alerts / false positives</option>
+                                    </optgroup>
+
+                                    <optgroup label="Network and Connectivity Issues">
+                                        <option>No internet connection</option>
+                                        <option>Frequent disconnections</option>
+                                        <option>Slow internet speed</option>
+                                        <option>DNS resolution failure</option>
+                                        <option>Network driver issues</option>
+                                        <option>VPN connection failure</option>
+                                        <option>Proxy misconfiguration</option>
+                                        <option>Wi-Fi authentication failure</option>
+                                        <option>IP conflict</option>
+                                    </optgroup>
+
+                                    <optgroup label="Update and Patch Issues">
+                                        <option>Failed OS update</option>
+                                        <option>Stuck on update screen</option>
+                                        <option>Application update failure</option>
+                                        <option>Rollback after update failure</option>
+                                        <option>Incompatible software after update</option>
+                                    </optgroup>
+
+                                    <optgroup label="File System and Storage Errors">
+                                        <option>Corrupted file system</option>
+                                        <option>Read/write permission errors</option>
+                                        <option>File access denied</option>
+                                        <option>Corrupted partitions</option>
+                                        <option>Missing files or folders</option>
+                                        <option>Slow file transfer speeds</option>
+                                    </optgroup>
+
+                                    <optgroup label="Email and Communication Software Issues">
+                                        <option>Email not sending or receiving</option>
+                                        <option>Corrupted email PST/OST file</option>
+                                        <option>Email application crash</option>
+                                        <option>Spam filter malfunction</option>
+                                        <option>Authentication errors in email client</option>
+                                    </optgroup>
+
+                                    <optgroup label="Browser and Web Issues">
+                                        <option>Browser not opening</option>
+                                        <option>Slow browsing speed</option>
+                                        <option>Corrupted browser profile</option>
+                                        <option>Browser crashes</option>
+                                        <option>Extensions not working</option>
+                                        <option>Excessive pop-ups / unwanted ads</option>
+                                        <option>Bookmarks missing</option>
+                                        <option>History/cache corruption</option>
+                                    </optgroup>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <label for="">Preferred Contact Date</label>
+                            <div class="input">
+                                <input type="date" required>
+                            </div>
                         </div>
                     </div>
-                    <div class="div">
-                        <label for="">Preferred Contact Date</label>
-                        <div class="input">
-                            <input type="date" required>
-                        </div>
-                    </div>
+
+
                 </div>
-
-                
-            </div>
-<div class="balance-checker2">
+                <div class="balance-checker2">
                     <div class="headcheck2 ">
                         <img src="images/calculator (2).png" alt="">
                         <h4>Estimated Total</h4>
                     </div>
-                     <div class="checks">
+                    <div class="checks">
                         <h2>Device fee:
 
-</h2>
+                        </h2>
                         <p class="Device-fees1">GHs2.00</p>
-                    </div> <div class="checks">
+                    </div>
+                    <div class="checks">
                         <h2>Brand fee:
 
-</h2>
+                        </h2>
                         <p class="Brand-fees1">GHs2.00</p>
                     </div>
 
                     <div class="checks">
                         <h2>Service fee:
 
-</h2>
+                        </h2>
                         <p class="Service-fees1">GHs2.00</p>
                     </div>
                     <div class="checks">
                         <h2>Parts (if needed):
 
-</h2>
+                        </h2>
                         <p class="Parts-fees1">GHs34.00</p>
                     </div>
                     <div class="checks">
                         <h2>Tax:
 
-</h2>
+                        </h2>
                         <p class="Tax-fees1">GHs10.00</p>
                     </div>
                     <div class="checks">
@@ -451,11 +1412,11 @@
                 </div>
                 <div class="submit">
                     <button class="submitrequest">
-                    <p>Submit Request</p>
-                    <img src="images/paper-plane.png" alt="">
-                </button>
+                        <p>Submit Request</p>
+                        <img src="images/paper-plane.png" alt="">
+                    </button>
                 </div>
-    </section>
+        </section>
     </section>
     <script src="js/form-handles.js"></script>
 </body>

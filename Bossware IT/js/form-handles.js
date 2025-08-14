@@ -17,6 +17,89 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const dropdown = document.getElementById("hardwareDropdown");
+const selectBox = dropdown.querySelector(".select-box");
+const optionsContainer = dropdown.querySelector(".options-container");
+const checkboxes = optionsContainer.querySelectorAll("input[type=checkbox]");
+const selectedText = document.getElementById("selectedText");
+
+selectBox.addEventListener("click", () => {
+  optionsContainer.style.display = optionsContainer.style.display === "block" ? "none" : "block";
+});
+
+checkboxes.forEach(cb => {
+  cb.addEventListener("change", () => {
+    let selected = [];
+    checkboxes.forEach(chk => {
+      if (chk.checked) selected.push(chk.value);
+    });
+    selectedText.textContent = selected.length ? selected.join(", ") : "Select Hardware Fault(s)";
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!dropdown.contains(e.target)) {
+    optionsContainer.style.display = "none";
+  }
+});
+
+
+const dropdown1 = document.getElementById("hardwareDropdown1");
+const selectBox1 = dropdown1.querySelector(".select-box1");
+const optionsContainer1 = dropdown1.querySelector(".options-container1");
+const checkboxes1 = optionsContainer1.querySelectorAll("input[type=checkbox]");
+const selectedText1 = document.getElementById("selectedText1");
+
+selectBox1.addEventListener("click", () => {
+  optionsContainer1.style.display = optionsContainer1.style.display === "block" ? "none" : "block";
+});
+
+checkboxes1.forEach(cb => {
+  cb.addEventListener("change", () => {
+    let selected1 = [];
+    checkboxes1.forEach(chk1 => {
+      if (chk1.checked) selected1.push(chk1.value);
+    });
+    selectedText1.textContent = selected1.length ? selected1.join(", ") : "Select Hardware Fault(s)";
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!dropdown1.contains(e.target)) {
+    optionsContainer1.style.display = "none";
+  }
+});
+
+
+const dropdown2 = document.getElementById("hardwareDropdown2");
+const selectBox2 = dropdown2.querySelector(".select-box2");
+const optionsContainer2 = dropdown2.querySelector(".options-container2");
+const checkboxes2 = optionsContainer2.querySelectorAll("input[type=checkbox]");
+const selectedText2 = document.getElementById("selectedText2");
+
+selectBox2.addEventListener("click", () => {
+  optionsContainer2.style.display = optionsContainer2.style.display === "block" ? "none" : "block";
+});
+
+checkboxes2.forEach(cb => {
+  cb.addEventListener("change", () => {
+    let selected2 = [];
+    checkboxes2.forEach(chk2 => {
+      if (chk2.checked) selected2.push(chk1.value);
+    });
+    selectedText2.textContent = selected2.length ? selected2.join(", ") : "Select Hardware Fault(s)";
+  });
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", (e) => {
+  if (!dropdown2.contains(e.target)) {
+    optionsContainer2.style.display = "none";
+  }
+});
+
 
 //This belongs to individual request
 
@@ -30,12 +113,40 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   
 const brandPrices = {
-  Apple: 30,
-  Dell: 15,
-  HP: 12,
-  Lenovo: 10,
-  Sumsung: 18,
-  Microsoft: 20
+  apple: 30,
+  dell: 15,
+  hp: 12,
+  lenovo: 10,
+  sumsung: 18,
+  microsoft: 20,
+  asus:34,
+  acer:22,
+  lg:33,
+  alienware:42,
+  msi:50,
+  razer:33,
+  originpc: 22,
+  cyberpowerpc:10,
+  ibuypower:34,
+  fujitsu:32,
+  toshiba:85,
+  panasonic:32,
+  nec:54,
+  hitachi:67,
+  vaio:22,
+  system76:56,
+  zotac:32,
+  eurocom:21,
+  boxx:98,
+  chuwi:11,
+  clevo:54,
+  gigabyte:23,
+  emachines:76,
+  compaq:45,
+  gateway:78,
+  ibm:45,
+  packardbell:90,
+
 };
 
   const deviceSelect = document.getElementById("device-type");

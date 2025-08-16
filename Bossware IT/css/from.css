@@ -77,7 +77,7 @@ body {
     height: 50px;
     width: 200px;
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +123,7 @@ transform: scale(1.1);
     height: 50px;
     width: 200px;
     border: none;
-    border-radius: 10px;
+    border-radius:3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@ transform: scale(1.1);
     height: 50px;
     width: 200px;
     border: none;
-    border-radius: 10px;
+    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,17 +274,15 @@ label {
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(0, 0, 0, 0.377);
-    border-radius: 8px;
+  
 }
 
 .input1 {
     width: 100%;
     height: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+   
     border: 1px solid rgba(0, 0, 0, 0.377);
-    border-radius: 8px;
+    
 }
 
 /* new */
@@ -295,9 +293,9 @@ label {
 }
 
 .select-box {
-    /* border: 1px solid #ccc; */
+ 
     padding: 8px;
-    /* background: #fff; */
+ 
     border-radius: 5px;
     cursor: pointer;
 }
@@ -356,9 +354,9 @@ label {
 }
 
 .select-box1 {
-    /* border: 1px solid #ccc; */
+   
     padding: 8px;
-    /* background: #fff; */
+  
     border-radius: 5px;
     cursor: pointer;
 }
@@ -613,15 +611,48 @@ textarea {
     height: 50px;
     width: 180px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
     background: rgb(9, 53, 253);
 }
-
+.submitrequest1 {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background: #06a809;
+}
+.submitrequest2 {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    background: #80028b;
+}
 .submitrequest p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.submitrequest1 img {
+    height: 20px;
+}
+
+.submitrequest1 p {
     color: white;
     font-size: 1.2em;
     font-weight: 800;
@@ -633,7 +664,17 @@ textarea {
     height: 20px;
 }
 
+.submitrequest2 img {
+    height: 20px;
+}
 
+.submitrequest2 p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 800;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
 @media screen and (max-width:780px) {
     .forms-flex {
         width: 95%;

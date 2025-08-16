@@ -326,9 +326,15 @@ label {
 }
 
 .options-container label {
-    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
     padding: 6px 10px;
     cursor: pointer;
+}
+.options-container label input{
+    width: 20%;
 }
 
 
@@ -379,13 +385,17 @@ label {
     display: none;
     z-index: 300;
 }
-
 .options-container1 label {
-    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
     padding: 6px 10px;
     cursor: pointer;
 }
-
+.options-container1 label input{
+    width: 20%;
+}
 
 .options-container1 label:hover {
     background: #f5f5f5;
@@ -436,11 +446,16 @@ label {
 }
 
 .options-container2 label {
-    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
     padding: 6px 10px;
     cursor: pointer;
 }
-
+.options-container2 label input{
+    width: 20%;
+}
 
 .options-container2 label:hover {
     background: #f5f5f5;
